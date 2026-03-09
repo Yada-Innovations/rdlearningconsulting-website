@@ -618,14 +618,6 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.1; font-wei
   padding: var(--sp-2) var(--sp-4);
   border-radius: var(--radius);
 }
-.approach-item__areas li::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 50%;
-  background: var(--green);
-}
 
 /* ---- 10. SERVICE TILES (Homepage) ---- */
 .services-grid {
