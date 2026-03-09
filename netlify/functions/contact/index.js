@@ -45,6 +45,7 @@ exports.handler = async (event) => {
     host: process.env.SMTP_HOST,
     port: 465,
     secure: true,
+    authMethod: 'LOGIN',
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
