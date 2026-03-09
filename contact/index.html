@@ -143,16 +143,13 @@
             class="contact-form"
             name="contact"
             method="POST"
-            action="/contact/success/"
-            netlify
-            netlify-honeypot="bot-field"
+            action="/.netlify/functions/contact"
             aria-label="Contact form"
           >
             <!-- Honeypot field for spam prevention -->
             <p style="display:none;">
               <label>Don't fill this in: <input name="bot-field" tabindex="-1"></label>
             </p>
-            <input type="hidden" name="form-name" value="contact">
 
             <h3 style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:700;color:var(--navy);margin-bottom:var(--sp-6);">Send us a message</h3>
 

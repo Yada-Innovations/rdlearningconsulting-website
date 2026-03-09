@@ -3,6 +3,9 @@
 [build]
   publish = "."
 
+[functions]
+  directory = "netlify/functions"
+
 # Clean URLs — Netlify serves /about/ from about/index.html automatically
 # The settings below handle additional edge cases
 
