@@ -49,6 +49,9 @@ exports.handler = async (event) => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
   const mailOptions = {
@@ -81,7 +84,9 @@ exports.handler = async (event) => {
       body: '',
     };
   } catch (err) {
-    console.error('Mail error:', err);
+    console.error('Mail error code:', err.code);
+    console.error('Mail error message:', err.message);
+    console.error('Mail error response:', err.response);
     return {
       statusCode: 302,
       headers: { Location: '/contact/?error=1' },
