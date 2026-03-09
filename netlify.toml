@@ -6,6 +6,9 @@
 [functions]
   directory = "netlify/functions"
 
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+
 # Clean URLs — Netlify serves /about/ from about/index.html automatically
 # The settings below handle additional edge cases
 
