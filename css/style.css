@@ -367,8 +367,19 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.1; font-wei
   transform: translate(-50%, -50%);
   z-index: 1;
   pointer-events: none;
-  opacity: 0.5; /* Slightly lower opacity to allow the navy background to show through more */
+  opacity: 0.5;
   display: block;
+}
+
+@media (max-width: 767px) {
+  .hero__bg-video {
+    display: none;
+  }
+  .hero {
+    background-image: url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* Dark Overlay for Readability */
