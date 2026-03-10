@@ -7,6 +7,7 @@
 :root {
   /* Brand Colours */
   --navy:          #16143d;
+  --navy-dark:     #0f2044;
   --navy-mid:      #1e1b54;
   --navy-light:    #2a2870;
   --green:         #11b872;
@@ -546,7 +547,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.1; font-wei
 .section--lg { padding-block: var(--sp-32); }
 .section--alt { background: var(--bg-alt); }
 .section--navy { background: var(--navy); }
-.section--dark { background: var(--gray-900); }
+.section--dark { background: var(--navy-dark); }
 
 .section__head {
   margin-bottom: var(--sp-12);
@@ -1043,7 +1044,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.1; font-wei
 
 /* ---- 17. FOOTER ---- */
 .footer {
-  background: var(--gray-900);
+  background: var(--navy-dark);
   padding-block: var(--sp-16) var(--sp-8);
 }
 .footer__grid {
